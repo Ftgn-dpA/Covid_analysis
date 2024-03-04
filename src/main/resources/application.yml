@@ -1,0 +1,20 @@
+# 服务器运行的端口号
+server:
+  port: 8089
+
+# JDBC连接
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/analysis?useSSL=false
+    username: root
+    password: 123456
+
+# 自定义参数配置
+const:
+  # 网易疫情数据url
+  get163ESInfoURL: https://c.m.163.com/ug/api/wuhan/app/data/list-total
+  # 保存文件的目录
+  DataSaveDir: D:/covidData
+  # 疫情数据文件的前缀
+  SaveNamePrefix: es_
